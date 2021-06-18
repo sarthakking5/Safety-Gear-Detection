@@ -3,7 +3,7 @@ The project aims to detect whether the person is wearing the gear that ensures s
 
 ![](https://github.com/sarthakking5/Safety-Gear-Detection/blob/4da7d2544711652d922bd10509c3986012491610/images/output_gif.gif)
 
-**<font size="+3">Steps</font>**
+# Steps
 
 # 1.Cloning the model
 
@@ -27,4 +27,28 @@ protoc object_detection/protos/*.proto --python_out=.
 Install the Tensorflow\models\research\object_detection package by running the following from Tensorflow\models\research:
 
 **From within TensorFlow/models/research/**
+
 pip install .
+
+**To test the installation run:**
+
+Test the installation.
+python object_detection/builders/model_builder_tf2_test.py
+
+# 4.Gathering Data
+
+Now that the Tensorflow Object Detection API is ready to go, we need to gather the images needed for training.
+
+To train a robust model, the pictures should be as diverse as possible. So they should have different backgrounds, varying lighting conditions, and unrelated random objects in them.
+
+You can either take pictures yourself, or you can download pictures from the internet.
+
+# 5. Labeling Data
+
+With all the pictures gathered, we come to the next step - labeling the data. Labeling is the process of drawing bounding boxes around the desired objects.
+
+LabelImg is a great tool for creating an object detection data-set.
+
+Download and install LabelImg. Then point it to your images/train and images/test directories, and draw a box around each object in each image
+
+![](https://github.com/sarthakking5/Safety-Gear-Detection/blob/50d8b9ac97380fa5abfccac3877d07eae91fe3fb/images/Screenshot%20(54).png)
