@@ -3,7 +3,7 @@ The project aims to detect whether the person is wearing the gear that ensures s
 
 ![](https://github.com/sarthakking5/Safety-Gear-Detection/blob/4da7d2544711652d922bd10509c3986012491610/images/output_gif.gif)
 
-**<font size="+1">Steps</font>**
+**<font size="+3">Steps</font>**
 
 **1.Installation**
 
