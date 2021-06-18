@@ -103,3 +103,11 @@ The id number of each item should match the id of specified in the generate_tfre
 To train the model, execute the following command in the command line:
 
 python train.py --pipeline_config_path=training/ssd_inception_v2_coco.config --mode
+
+# 7. Exporting the inference graph
+Now that we have a trained model, we need to generate an inference graph that can be used to run the model.
+
+python /content/models/research/object_detection/exporter_main_v2.py \
+    --trained_checkpoint_dir training \
+    --output_directory inference_graph \
+    --pipeline_config_path training/ssd_inception_v2_coco.config
